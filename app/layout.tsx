@@ -22,7 +22,9 @@ export default function RootLayout({
         className={`${inter.className} bg-[#F3F4F7] max-w-[1920px] mx-auto`}
       >
         <div className="flex gap-8 p-8">
-          <Sidebar />
+          <div className="flex-shrink-0">
+            <Sidebar />
+          </div>
           <div className="w-full">
             <Navbar />
 

@@ -10,6 +10,7 @@ const config: Config = {
     extend: {
       boxShadow: {
         navDivShadow: "0px 1px 2px 0px #1018280D",
+        homeBtnShadow: "10px 14px 61.8px 0px #00000063",
       },
     },
   },
