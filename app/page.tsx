@@ -33,7 +33,7 @@ export default function Home() {
         width={1000}
         closable={false}
       >
-        <AddLead />
+        <AddLead handleCancel={handleCancel} />
       </Modal>
       <main className="flex justify-between items-start gap-8">
         <div className="flex-1 bg-white rounded-[31px] p-6">

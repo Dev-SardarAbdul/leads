@@ -4,7 +4,7 @@ import Image from "next/image";
 import { Select } from "antd";
 import { IoIosClose } from "react-icons/io";
 
-const AddLead = () => {
+const AddLead = ({ handleCancel }: { handleCancel: () => void }) => {
   const labelStyles = "text-xl font-medium text-[#1C1C1C]";
   const inputStyles =
     "border border-black h-[53px] w-full px-4 outline-none rounded-[19px] mt-1 text-[#1C1C1C] font-medium text-xl placeholder:text-[#1C1C1C] placeholder:text-opacity-40";
@@ -16,7 +16,10 @@ const AddLead = () => {
     <div className="bg-white 2xl:h-auto h-[500px] overflow-auto rounded-[30px] p-7 relative flex flex-col gap-4">
       <div className="flex justify-between items-center gap-2">
         <h4 className="font-semibold text-3xl">Add/Edit Lead</h4>
-        <IoIosClose className="text-4xl text-black cursor-pointer" />
+        <IoIosClose
+          className="text-4xl text-black cursor-pointer"
+          onClick={handleCancel}
+        />
       </div>
 
       <div className="flex justify-between items-center gap-4">
