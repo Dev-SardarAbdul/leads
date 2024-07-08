@@ -9,7 +9,11 @@ const Sidebar = () => {
     <div className="bg-white h-[calc(100vh-64px)] overflow-auto sticky top-8 w-[86px] flex-col flex justify-between items-center gap-4 py-6 rounded-[64px]">
       <Image src={sidebarLogo} alt="sidebar logo" />
       {array.map((__, index) => (
-        <div className="bg-[#F9F8FB] size-14 flex flex-shrink-0 justify-center cursor-pointer items-center rounded-2xl">
+        <div
+          className={` size-14 flex flex-shrink-0 justify-center cursor-pointer items-center rounded-2xl ${
+            index === 1 ? "bg-black" : "bg-[#F9F8FB]"
+          }`}
+        >
           <SidebarIcons active={true} index={index} />
         </div>
       ))}
