@@ -15,8 +15,8 @@ export default function Home() {
         <h4 className="text-black -mt-1 text-3xl font-medium">$21,421</h4>
 
         <div className="flex flex-col gap-8 mt-8">
-          {[...Array(5)].map(() => (
-            <InfoCard />
+          {[...Array(5)].map((__, index) => (
+            <InfoCard key={index} />
           ))}
         </div>
       </div>
@@ -32,8 +32,8 @@ export default function Home() {
         </div>
         <h4 className="text-black -mt-1 text-3xl font-medium">$21,421</h4>
         <div className="flex flex-col gap-8 mt-8">
-          {[...Array(2)].map(() => (
-            <InfoCard />
+          {[...Array(2)].map((__, index) => (
+            <InfoCard key={index} />
           ))}
         </div>
       </div>
@@ -47,8 +47,8 @@ export default function Home() {
         </div>
         <h4 className="text-black -mt-1 text-3xl font-medium">$21,421</h4>
         <div className="flex flex-col gap-8 mt-8">
-          {[...Array(1)].map(() => (
-            <InfoCard />
+          {[...Array(1)].map((__, index) => (
+            <InfoCard key={index} />
           ))}
         </div>
       </div>
@@ -62,8 +62,8 @@ export default function Home() {
         </div>
         <h4 className="text-black -mt-1 text-3xl font-medium">$21,421</h4>
         <div className="flex flex-col gap-8 mt-8">
-          {[...Array(3)].map(() => (
-            <InfoCard />
+          {[...Array(3)].map((__, index) => (
+            <InfoCard key={index} />
           ))}
         </div>
       </div>
