@@ -4,7 +4,7 @@ import "./globals.css";
 import Sidebar from "@/components/sidebar";
 import Navbar from "@/components/navbar";
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -19,7 +19,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${inter.className} bg-[#F3F4F7] max-w-[1920px] mx-auto`}
+        className={`${inter.className} ${inter.variable} bg-[#F3F4F7] max-w-[1920px] mx-auto`}
       >
         <div className="flex gap-8 p-8">
           <div className="flex-shrink-0">
