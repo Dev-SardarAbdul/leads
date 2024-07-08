@@ -18,9 +18,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${inter.className} ${inter.variable} bg-[#F3F4F7] max-w-[1920px] mx-auto`}
-      >
+      <body className={`${inter.className} ${inter.variable} bg-[#F3F4F7]`}>
         <div className="flex gap-8 p-8">
           <div className="flex-shrink-0">
             <Sidebar />
